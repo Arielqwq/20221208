@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    .text-truncate-mutiple {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>文字截斷</h1>
+    <h2>單行文字截斷</h2>
+    <p>對於較長的內容，可以添加 .text-truncate 類別，以透過刪節號截斷文字。需為 display: inline-block 或是 display: block。</p>
+    <h3>Block Level </h3>
+    <div class="row">
+      <div class="col-2 text-truncate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui obcaecati beatae consequuntur, laboriosam repellendus delectus optio laudantium
+        omnis fugit provident, inventore nemo. Reiciendis dolore alias atque modi porro vero.
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Inline Block Level</h3>
+    <div class="d-inline-block text-truncate" style="width:500px;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sunt voluptatum officia corporis ratione, voluptatibus similique veritatis, voluptas sed
+      excepturi nisi fuga autem id necessitatibus, molestiae nostrum voluptate sequi sit!
+    </div>
+
+    <hr>
+
+    <h2>多行文字截斷</h2>
+    <div style="width:300px">
+      <p class="text-truncate-mutiple">
+        都沒操作系統，害怕一口批准，評價選項也可市政府藥品轉移真正，此刻笑話，一臉作用給我默認外掛超過應當會員有關部門內部經典微軟，生存反對，水晶聯繫電話顧客宅宅加工主任強大障礙信號宅宅怪物給我違反，什麼是一時讓她鄉民們很大明星銷售唯一一身討論區，專家臨時實現參。
+      </p>
+    </div>
+  </div>
+  <!-- 2. link bootstrap.bundle.js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
